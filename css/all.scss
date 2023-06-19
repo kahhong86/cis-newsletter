@@ -1,0 +1,151 @@
+//sass --watch css:css
+@import "_lib.scss";
+
+$purple: #655dc6;
+$yellow: #f3cd25;
+
+body{
+    border-top:24px solid $purple;
+    font-size:25px;
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+.social-media {
+    padding:30px 0;
+    text-align: right;
+
+    li{
+        @include inlineblock;
+        padding:0 5px;
+
+        i{
+            font-size:30px;
+            font-weight:300;
+            color:#000;
+        }
+
+        .facebook i{
+            background-color: #000;
+            border-radius: 999px;
+            color:#fff;
+            font-size:25px;
+            padding:4px 2px 0;
+            margin:2px 0 0;
+
+            &::before{
+                position: relative;
+                top:1px;
+            }
+        }
+
+        .fb::before{
+            content: "\f39e";
+        }
+    }
+}
+
+h1{
+    font-size:45px;
+}
+h2{
+    font-size:35px;
+}
+
+.date{
+    font-size:25px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    padding:20px 0;
+    margin:0 0 40px;
+
+    i{
+        color:#fff;
+        padding:4px;
+        background: #000;
+        border-radius: 9999px;
+        margin:0 15px 0 0;
+    }
+}
+
+.intro{
+    width:80%;
+}
+
+.blog{
+    background-color: $purple;
+    padding:40px;
+    margin: 40px 0 40px -40px;
+    color:#fff;
+
+    .portrait{
+        position: relative;
+        margin:0 0 40px;
+
+        img{
+            width:500px;
+        }
+        .caption{
+            position: absolute;
+            top:0;
+            width: 600px;
+            right: -200px;
+            background: #000;
+            color:#fff;
+            padding:20px 20px 50px 30px;   
+
+            strong{
+                display: block;
+            }
+
+            .caption-inner{
+                border-left:9px solid $yellow;
+                padding-left:20px;
+                height:85px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body{
+        font-size: 16px;
+    }
+
+    h1{
+        font-size:35px;
+    }
+    h2{
+        font-size:25px;
+    }
+
+    .wrapper{
+        max-width: none;
+        padding:0 2rem;
+    }
+    .intro{
+        width:100%;
+    }
+    .blog{
+        margin:40px 0;
+        padding:20px;
+
+        .portrait{
+            margin:0 0 20px;
+
+            img{
+                width:100%;
+                margin:0 0 20px;
+            }
+            .caption{
+                width:auto;
+                position: relative;
+                right:auto;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}

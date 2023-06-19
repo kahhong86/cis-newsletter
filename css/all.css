@@ -1,0 +1,197 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", Arial;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0;
+  color: #333;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 150%;
+  margin: 0 0 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clr {
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 100%;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+figure {
+  margin: 0;
+}
+
+body {
+  border-top: 24px solid #655dc6;
+  font-size: 25px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.social-media {
+  padding: 30px 0;
+  text-align: right;
+}
+.social-media li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  padding: 0 5px;
+}
+.social-media li i {
+  font-size: 30px;
+  font-weight: 300;
+  color: #000;
+}
+.social-media li .facebook i {
+  background-color: #000;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 25px;
+  padding: 4px 2px 0;
+  margin: 2px 0 0;
+}
+.social-media li .facebook i::before {
+  position: relative;
+  top: 1px;
+}
+.social-media li .fb::before {
+  content: "";
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.date {
+  font-size: 25px;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 20px 0;
+  margin: 0 0 40px;
+}
+.date i {
+  color: #fff;
+  padding: 4px;
+  background: #000;
+  border-radius: 9999px;
+  margin: 0 15px 0 0;
+}
+
+.intro {
+  width: 80%;
+}
+
+.blog {
+  background-color: #655dc6;
+  padding: 40px;
+  margin: 40px 0 40px -40px;
+  color: #fff;
+}
+.blog .portrait {
+  position: relative;
+  margin: 0 0 40px;
+}
+.blog .portrait img {
+  width: 500px;
+}
+.blog .portrait .caption {
+  position: absolute;
+  top: 0;
+  width: 600px;
+  right: -200px;
+  background: #000;
+  color: #fff;
+  padding: 20px 20px 50px 30px;
+}
+.blog .portrait .caption strong {
+  display: block;
+}
+.blog .portrait .caption .caption-inner {
+  border-left: 9px solid #f3cd25;
+  padding-left: 20px;
+  height: 85px;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .wrapper {
+    max-width: none;
+    padding: 0 2rem;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .blog {
+    margin: 40px 0;
+    padding: 20px;
+  }
+  .blog .portrait {
+    margin: 0 0 20px;
+  }
+  .blog .portrait img {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .blog .portrait .caption {
+    width: auto;
+    position: relative;
+    right: auto;
+    padding-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=all.css.map */
