@@ -73,6 +73,13 @@ h2{
 
 .intro{
     width:80%;
+
+    .alt-18{
+        font-size: 18px;
+    }
+    .alt-16{
+        font-size: 16px;
+    }
 }
 
 .blog{
@@ -128,6 +135,8 @@ h2{
     }
     .intro{
         width:100%;
+
+        
     }
     .blog{
         margin:40px 0;
@@ -147,5 +156,7 @@ h2{
                 padding-bottom: 30px;
             }
         }
+
+        
     }
 }

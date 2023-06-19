@@ -121,6 +121,12 @@ h2 {
 .intro {
   width: 80%;
 }
+.intro .alt-18 {
+  font-size: 18px;
+}
+.intro .alt-16 {
+  font-size: 16px;
+}
 
 .blog {
   background-color: #655dc6;
