@@ -6,7 +6,7 @@ $yellow: #f3cd25;
 
 body{
     border-top:24px solid $purple;
-    font-size:25px;
+    font-size:18px;
 }
 
 .wrapper{
@@ -49,14 +49,14 @@ body{
 }
 
 h1{
-    font-size:45px;
+    font-size:35px;
 }
 h2{
-    font-size:35px;
+    font-size:25px;
 }
 
 .date{
-    font-size:25px;
+    font-size:18px;
     border-top: 4px solid black;
     border-bottom: 4px solid black;
     padding:20px 0;
@@ -73,13 +73,6 @@ h2{
 
 .intro{
     width:80%;
-
-    .alt-18{
-        font-size: 18px;
-    }
-    .alt-16{
-        font-size: 16px;
-    }
 }
 
 .blog{
@@ -98,11 +91,11 @@ h2{
         .caption{
             position: absolute;
             top:0;
-            width: 600px;
-            right: -200px;
+            width: 500px;
+            right: -100px;
             background: #000;
             color:#fff;
-            padding:20px 20px 50px 30px;   
+            padding:20px 20px 20px 30px;   
 
             strong{
                 display: block;
