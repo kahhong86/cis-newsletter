@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Roboto", Arial;
   font-size: 14px;
@@ -56,6 +55,7 @@ figure {
 body {
   border-top: 24px solid #655dc6;
   font-size: 18px;
+  background: #f5f5f5;
 }
 
 .wrapper {
@@ -74,83 +74,373 @@ body {
   vertical-align: top;
   padding: 0 5px;
 }
-.social-media li i {
-  font-size: 30px;
-  font-weight: 300;
-  color: #000;
+.social-media li a {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
 }
-.social-media li .facebook i {
-  background-color: #000;
-  border-radius: 999px;
-  color: #fff;
-  font-size: 25px;
-  padding: 4px 2px 0;
-  margin: 2px 0 0;
+.social-media li a img {
+  width: 26px;
+  height: 26px;
 }
-.social-media li .facebook i::before {
-  position: relative;
-  top: 1px;
-}
-.social-media li .fb::before {
-  content: "";
+.social-media li .fb {
+  background: url("../images/ico-big-fb.png") no-repeat scroll left top transparent;
 }
 
 h1 {
   font-size: 35px;
 }
+h1 span {
+  font-weight: 300;
+  display: block;
+  line-height: 100%;
+  margin-top: 10px;
+}
 
 h2 {
-  font-size: 25px;
+  font-size: 30px;
+}
+
+.yellow-border {
+  border-left: 14px solid #f3cd25;
+  padding-left: 20px;
 }
 
 .date {
-  font-size: 18px;
+  font-size: 25px;
   border-top: 4px solid black;
   border-bottom: 4px solid black;
-  padding: 20px 0;
+  padding: 20px 0 20px;
   margin: 0 0 40px;
 }
-.date i {
-  color: #fff;
-  padding: 4px;
-  background: #000;
-  border-radius: 9999px;
-  margin: 0 15px 0 0;
+.date .wrapper {
+  position: relative;
+}
+.date img {
+  position: absolute;
+  left: 0;
+  top: -7px;
+}
+.date span {
+  padding-left: 55px;
 }
 
-.intro {
-  width: 80%;
+.welcome p {
+  font-size: 20px;
 }
 
-.blog {
+.blog, .blog-alt {
   background-color: #655dc6;
-  padding: 40px;
-  margin: 40px 0 40px -40px;
+  padding: 65px;
+  margin: 65px 0 65px -65px;
   color: #fff;
+  width: 75%;
 }
-.blog .portrait {
+.blog .portrait, .blog-alt .portrait {
   position: relative;
   margin: 0 0 40px;
 }
-.blog .portrait img {
+.blog .portrait .avatar, .blog-alt .portrait .avatar {
   width: 500px;
 }
-.blog .portrait .caption {
+.blog .portrait .caption, .blog-alt .portrait .caption {
   position: absolute;
   top: 0;
   width: 500px;
-  right: -100px;
+  right: -120px;
   background: #000;
   color: #fff;
   padding: 20px 20px 20px 30px;
 }
-.blog .portrait .caption strong {
+.blog .portrait .caption strong, .blog-alt .portrait .caption strong {
   display: block;
 }
-.blog .portrait .caption .caption-inner {
+.blog .portrait .caption .caption-inner, .blog-alt .portrait .caption .caption-inner {
   border-left: 9px solid #f3cd25;
   padding-left: 20px;
   height: 85px;
+}
+.blog .portrait .caption .caption-inner strong, .blog-alt .portrait .caption .caption-inner strong {
+  font-size: 28px;
+  line-height: 30px;
+}
+.blog .portrait .wave, .blog-alt .portrait .wave {
+  position: absolute;
+  top: 150px;
+  margin-left: 40px;
+}
+
+.title-container {
+  position: relative;
+  margin: 0 0 40px;
+  color: #000;
+}
+.title-container span {
+  font-weight: normal;
+  display: block;
+  text-transform: none;
+  margin-top: 5px;
+}
+.title-container .icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.title-container .header {
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 0 0;
+  background: url("../images/title-line-yellow.png") no-repeat scroll bottom left transparent;
+  background-size: 242px 20px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.link-yellow {
+  color: black;
+  text-decoration: underline;
+  background: yellow;
+  padding: 10px;
+}
+
+.divider-dash, .divider-dash-alt {
+  display: block;
+  border-bottom: 1px dashed #b9b9b9;
+  margin: 40px -65px;
+}
+
+.divider-dash-alt {
+  border-color: white;
+}
+
+.two-column {
+  display: flex;
+  margin: 0 -40px;
+}
+.two-column .bio.no-top {
+  padding-top: 0;
+}
+
+.bio {
+  padding: 65px 40px;
+  width: 50%;
+}
+.bio .portrait-alt {
+  display: block;
+  margin: 0 auto 40px;
+  width: 311px;
+  height: 311px;
+}
+.bio .caption-alt {
+  border-top: 7px solid black;
+  border-bottom: 7px solid black;
+  padding: 20px 0;
+  margin: 0 0 20px;
+}
+.bio .caption-alt .header {
+  font-size: 27px;
+  line-height: 33px;
+  margin: 0px 0;
+}
+.bio .caption-alt span {
+  font-size: 20px;
+  line-height: 24px;
+}
+.bio .quote {
+  display: block;
+  width: 53px;
+  height: 53px;
+  margin: 30px auto;
+}
+.bio .description {
+  line-height: 28px;
+}
+
+.yellow-container {
+  padding: 65px 65px 40px;
+  margin: 0 -65px 60px;
+  background-color: #f3cd25;
+}
+.yellow-container .title-container .header {
+  background-image: url("../images/title-line-white.png");
+}
+
+.academic .divider-dash-alt {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.excerpt {
+  width: 60%;
+  color: #000;
+  margin: 0 0 40px;
+  display: block;
+}
+
+.button, .button-alt {
+  background-color: #655dc6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.button-alt {
+  background-color: #000;
+}
+
+.button-container {
+  margin: 40px 0 0;
+}
+.button-container div {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.button-container div:first-child {
+  margin: 0 40px 0 0;
+}
+.button-container span {
+  font-size: 16px;
+}
+
+.discount {
+  font-size: 28px;
+  font-weight: 800;
+  display: flex;
+  margin: 30px 0 30px;
+}
+.discount img {
+  width: 54px;
+  height: 60px;
+  margin: 0 20px 0 0;
+}
+.discount strong {
+  line-height: 31px;
+}
+
+.img-content {
+  display: flex;
+}
+.img-content .img {
+  width: 467px;
+}
+.img-content .content {
+  padding: 0 40px;
+}
+.img-content .content .header {
+  margin: 0 0 20px;
+  font-size: 25px;
+  line-height: 31px;
+}
+
+.blog-alt .img-content .avatar {
+  width: 336px;
+  height: 327px;
+}
+.blog-alt .img-content .content {
+  padding-right: 0;
+}
+.blog-alt .img-content .content .caption {
+  border-top: 7px solid white;
+  border-bottom: 7px solid white;
+  padding: 20px 0;
+  margin: 0 0 40px;
+}
+.blog-alt .img-content .content .caption .header {
+  font-size: 30px;
+  line-height: 33px;
+  margin: 0;
+}
+.blog-alt .img-content .content .caption .header span {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+}
+.blog-alt .img-content .content .quote {
+  display: block;
+  width: 53px;
+  height: 53px;
+  margin: 20px auto;
+}
+
+.infographic {
+  width: 1146px;
+  margin: 40px 0;
+  display: block;
+}
+
+.title-alt {
+  font-size: 31px;
+  line-height: 37px;
+  color: #000;
+  padding: 0 0 65px;
+  margin: 0 0 40px;
+  background: url("../images/line-squiggle.png") no-repeat scroll bottom left transparent;
+  background-size: 302px 46px;
+}
+
+.contact {
+  width: 50%;
+  padding: 0 40px;
+}
+.contact p {
+  margin: 0 0 40px;
+}
+
+.social {
+  margin: 0 0 40px;
+}
+.social .item {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  width: 170px;
+  text-align: center;
+  margin: 0 40px 0 0;
+}
+.social .item span {
+  text-decoration: underline;
+  color: #000;
+}
+.social img {
+  width: 170px;
+  height: 170px;
+}
+
+.brow {
+  width: 207px;
+  height: 85px;
+  display: block;
+  margin: 0 auto;
+}
+
+#footer {
+  border-top: 7px solid #000;
+  margin: 0 -65px;
+  padding: 20px 65px;
+  font-size: 25px;
+  font-weight: 400;
+}
+#footer img {
+  width: 106px;
+  position: relative;
+  top: 17px;
+  margin: 0 20px 0 0;
+}
+#footer span {
+  color: #000;
+}
+#footer a {
+  color: #000;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -159,11 +449,23 @@ h2 {
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 25px;
+    line-height: 15px;
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 20px;
+  }
+  .date img {
+    left: auto;
+  }
+
+  .welcome p {
+    font-size: 16px;
   }
 
   .wrapper {
@@ -175,22 +477,191 @@ h2 {
     width: 100%;
   }
 
-  .blog {
+  .blog, .blog-alt {
     margin: 40px 0;
     padding: 20px;
+    width: auto;
   }
-  .blog .portrait {
+  .blog .portrait, .blog-alt .portrait {
     margin: 0 0 20px;
   }
-  .blog .portrait img {
+  .blog .portrait .avatar, .blog-alt .portrait .avatar {
     width: 100%;
     margin: 0 0 20px;
   }
-  .blog .portrait .caption {
+  .blog .portrait .caption, .blog-alt .portrait .caption {
     width: auto;
     position: relative;
     right: auto;
     padding-bottom: 30px;
+  }
+  .blog .wave, .blog-alt .wave {
+    display: none;
+  }
+
+  .two-column {
+    display: block;
+    margin: 0 -2rem;
+  }
+
+  .divider-dash, .divider-dash-alt {
+    margin: 40px 0;
+  }
+
+  .bio {
+    width: auto;
+    padding: 40px;
+  }
+  .bio .portrait-alt {
+    width: 100%;
+    height: auto;
+  }
+  .bio .caption-alt {
+    padding: 10px 0;
+  }
+  .bio .caption-alt .header {
+    font-size: 22px;
+  }
+  .bio .caption-alt span {
+    font-size: 17px;
+  }
+  .bio .quote {
+    margin: 15px auto;
+  }
+
+  .title-container {
+    margin-bottom: 20px;
+  }
+  .title-container .icon {
+    width: 15%;
+    height: auto;
+  }
+  .title-container .header {
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .img-content {
+    display: block;
+  }
+  .img-content .img {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .img-content .content {
+    display: block;
+    padding: 0;
+  }
+
+  .discount {
+    font-size: 18px;
+  }
+  .discount img {
+    width: 27px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .discount strong {
+    line-height: 25px;
+  }
+
+  .infographic {
+    width: 100%;
+  }
+
+  .excerpt {
+    width: 100%;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+  .button-container div {
+    text-align: center;
+    display: block;
+  }
+  .button-container div:first-child {
+    margin: 0 0 20px 0;
+  }
+  .button-container .button, .button-container .button-alt {
+    width: auto;
+    display: block;
+    margin: 0 0 10px;
+  }
+
+  .large-only {
+    display: none;
+  }
+
+  .button, .button-alt {
+    display: block;
+    text-align: center;
+  }
+
+  .blog-alt .img-content .avatar {
+    width: 100%;
+    height: auto;
+  }
+  .blog-alt .img-content .content .caption {
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+  .blog-alt .img-content .content .caption .header {
+    font-size: 22px;
+  }
+  .blog-alt .img-content .content .caption .header span {
+    font-size: 15px;
+  }
+  .blog-alt .img-content .content .quote {
+    margin: 15px auto;
+  }
+
+  .contact {
+    width: auto;
+  }
+
+  .social img {
+    width: 100px;
+    height: 100px;
+  }
+  .social .item {
+    width: 100px;
+  }
+
+  #footer {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 -2rem;
+  }
+  #footer img {
+    top: auto;
+  }
+  #footer span {
+    display: block;
+  }
+
+  .yellow-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  .yellow-container:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .academic .divider-dash-alt {
+    margin: 0;
+  }
+
+  .divider-dash, .divider-dash-alt {
+    margin: 0;
+  }
+
+  .divider-dash-alt {
+    margin: 0;
   }
 }
 
