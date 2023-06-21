@@ -443,7 +443,228 @@ h2 {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1068px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 25px;
+    line-height: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 20px;
+  }
+  .date img {
+    left: auto;
+  }
+
+  .welcome p {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    max-width: none;
+    padding: 0 2rem;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .blog, .blog-alt {
+    margin: 40px 0;
+    padding: 20px;
+    width: auto;
+  }
+  .blog .portrait, .blog-alt .portrait {
+    margin: 0 0 20px;
+  }
+  .blog .portrait .avatar, .blog-alt .portrait .avatar {
+    width: 300px;
+    margin: 0 0 0px;
+  }
+  .blog .portrait .caption, .blog-alt .portrait .caption {
+    width: auto;
+    position: absolute;
+    right: 0;
+    padding-bottom: 20px;
+  }
+  .blog .wave, .blog-alt .wave {
+    display: none;
+  }
+
+  .two-column {
+    display: flex;
+    margin: 0 -2rem;
+  }
+
+  .divider-dash, .divider-dash-alt {
+    margin: 40px 0;
+  }
+
+  .bio {
+    width: 50%;
+    padding: 40px;
+  }
+  .bio .portrait-alt {
+    width: 100%;
+    height: auto;
+  }
+  .bio .caption-alt {
+    padding: 10px 0;
+  }
+  .bio .caption-alt .header {
+    font-size: 22px;
+  }
+  .bio .caption-alt span {
+    font-size: 17px;
+  }
+  .bio .quote {
+    margin: 15px auto;
+  }
+
+  .title-container {
+    margin-bottom: 20px;
+  }
+  .title-container .icon {
+    width: 15%;
+    height: auto;
+  }
+  .title-container .header {
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .img-content {
+    display: flex;
+  }
+  .img-content .img {
+    display: block;
+    width: 300px;
+    margin: 0 0 20px;
+  }
+  .img-content .content {
+    display: block;
+    padding: 0 20px 20px;
+  }
+
+  .discount {
+    font-size: 18px;
+  }
+  .discount img {
+    width: 27px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .discount strong {
+    line-height: 25px;
+  }
+
+  .infographic {
+    width: 100%;
+  }
+
+  .excerpt {
+    width: 100%;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+  .button-container div {
+    text-align: center;
+    display: block;
+  }
+  .button-container div:first-child {
+    margin: 0 0 20px 0;
+  }
+  .button-container .button, .button-container .button-alt {
+    width: auto;
+    display: block;
+    margin: 0 0 10px;
+  }
+
+  .large-only {
+    display: none;
+  }
+
+  .button, .button-alt {
+    display: block;
+    text-align: center;
+  }
+
+  .blog-alt .img-content .avatar {
+    width: 300px;
+    height: 300px;
+  }
+  .blog-alt .img-content .content .caption {
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+  .blog-alt .img-content .content .caption .header {
+    font-size: 22px;
+  }
+  .blog-alt .img-content .content .caption .header span {
+    font-size: 15px;
+  }
+  .blog-alt .img-content .content .quote {
+    margin: 15px auto;
+  }
+
+  .contact {
+    width: 50%;
+  }
+
+  .social img {
+    width: 100px;
+    height: 100px;
+  }
+  .social .item {
+    width: 100px;
+  }
+
+  #footer {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 -2rem;
+  }
+  #footer img {
+    top: auto;
+  }
+  #footer span {
+    display: block;
+  }
+
+  .yellow-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  .yellow-container:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .academic .divider-dash-alt {
+    margin: 0;
+  }
+
+  .divider-dash, .divider-dash-alt {
+    margin: 0;
+  }
+
+  .divider-dash-alt {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 734px) {
   body {
     font-size: 16px;
   }
