@@ -134,6 +134,10 @@ h2{
             margin-left:40px;
         }
     }
+
+    p{
+        margin:0 0 30px;
+    }
 }
 
 .title-container{
@@ -739,7 +743,15 @@ h2{
                 width:auto;
                 position: relative;
                 right:auto;
-                padding-bottom: 30px;
+                padding-bottom: 20px;
+
+                .caption-inner{
+                    height:auto;
+
+                    strong{
+                        font-size:25px;
+                    }
+                }
             }
         }
         .wave{

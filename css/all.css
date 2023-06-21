@@ -172,6 +172,9 @@ h2 {
   top: 150px;
   margin-left: 40px;
 }
+.blog p, .blog-alt p {
+  margin: 0 0 30px;
+}
 
 .title-container {
   position: relative;
@@ -714,7 +717,13 @@ h2 {
     width: auto;
     position: relative;
     right: auto;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+  }
+  .blog .portrait .caption .caption-inner, .blog-alt .portrait .caption .caption-inner {
+    height: auto;
+  }
+  .blog .portrait .caption .caption-inner strong, .blog-alt .portrait .caption .caption-inner strong {
+    font-size: 25px;
   }
   .blog .wave, .blog-alt .wave {
     display: none;
