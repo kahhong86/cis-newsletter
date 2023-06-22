@@ -522,6 +522,9 @@ h2 {
   .blog .wave, .blog-alt .wave {
     display: none;
   }
+  .blog p:last-child, .blog-alt p:last-child {
+    margin-bottom: 30px;
+  }
 
   .two-column {
     display: flex;

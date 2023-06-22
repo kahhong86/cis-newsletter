@@ -526,6 +526,11 @@ h2{
         .wave{
             display: none;
         }
+        p{
+            &:last-child{
+                margin-bottom:30px;
+            }
+        }
     }
 
     .two-column{
