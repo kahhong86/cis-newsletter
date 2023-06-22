@@ -725,8 +725,12 @@ h2 {
   .blog .portrait .caption .caption-inner strong, .blog-alt .portrait .caption .caption-inner strong {
     font-size: 25px;
   }
-  .blog .wave, .blog-alt .wave {
-    display: none;
+  .blog .portrait .wave, .blog-alt .portrait .wave {
+    display: block;
+    top: 40vw;
+    right: -5px;
+    width: 20vw;
+    height: auto;
   }
 
   .two-column {

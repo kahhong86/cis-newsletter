@@ -753,10 +753,16 @@ h2{
                     }
                 }
             }
+
+            .wave{
+                display: block;
+                top:40vw;
+                right:-5px;
+                width:20vw;
+                height:auto;
+            }
         }
-        .wave{
-            display: none;
-        }
+        
     }
 
     .two-column{
