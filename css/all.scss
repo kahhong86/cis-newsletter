@@ -4,10 +4,22 @@
 $purple: #655dc6;
 $yellow: #f3cd25;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     border-top:24px solid $purple;
     font-size:18px;
     background:#f5f5f5;
+}
+
+.backtotop{
+    width:32px;
+    height:32px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
 .wrapper{
@@ -137,6 +149,10 @@ h2{
 
     p{
         margin:0 0 30px;
+
+        &:last-child{
+            margin-bottom:0;
+        }
     }
 }
 
@@ -200,7 +216,7 @@ h2{
 }
 
 .bio{
-    padding:65px 40px;
+    padding:0px 40px 65px;
     width:50%;
 
     .portrait-alt{
@@ -248,6 +264,10 @@ h2{
         .header{
             background-image: url("../images/title-line-white.png");
         }
+    }
+
+    .bio{
+        padding-bottom:20px;
     }
 }
 
@@ -928,15 +948,26 @@ h2{
         }
     }
 
+    .matriculation{
+        p{
+            margin-bottom:40px;
+        }
+    }
+
 
     .yellow-container{
+        padding-top:40px;
         padding-left: 2rem;
         padding-right: 2rem;
         margin-left:-2rem;
         margin-right:-2rem;
+        margin-bottom:40px;
 
         &:last-child{
             margin-bottom:0;
+            padding-bottom:0;
+        }
+        .bio{
             padding-bottom:0;
         }
     }
