@@ -392,9 +392,12 @@ h2 {
 }
 
 .infographic {
-  width: 1146px;
+  width: 1088px;
+  height: 219px;
   margin: 40px 0;
   display: block;
+  background: url("../images/infographic.png") no-repeat scroll left top transparent;
+  background-size: 1088px 219px;
 }
 
 .title-alt {
@@ -589,6 +592,8 @@ h2 {
 
   .infographic {
     width: 100%;
+    background-size: contain;
+    height: 150px;
   }
 
   .excerpt {
@@ -819,7 +824,10 @@ h2 {
   }
 
   .infographic {
-    width: 100%;
+    background: url("../images/infographic-small.png") no-repeat scroll left top transparent;
+    width: 228px;
+    height: 585px;
+    background-size: 228px 585px;
   }
 
   .excerpt {
