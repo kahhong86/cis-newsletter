@@ -195,7 +195,7 @@ h2{
 .divider-dash{
     display: block;
     border-bottom:1px dashed #b9b9b9;
-    margin:40px -65px;
+    margin:60px -65px 80px;
 }
 
 .divider-dash-alt{
@@ -225,7 +225,7 @@ h2{
 }
 
 .bio{
-    padding:0px 40px 65px;
+    padding:0px 40px 40px;
     width:50%;
 
     .portrait-alt{
@@ -489,6 +489,9 @@ h2{
 }
 
 .app-cta{
+    background:#bab6f0;
+    margin:40px -65px 60px;
+    padding:40px 0 20px;
 
     .desc{
         margin:15px 0;
@@ -1012,6 +1015,14 @@ h2{
             }
             .second-column{
                 width:100%;
+                margin:0;
+                text-align: center;
+
+                .social{
+                    .item{
+                        margin:0 20px;
+                    }
+                }
             }
         }
     }
@@ -1025,5 +1036,11 @@ h2{
     }
     .divider-dash-alt{
         margin:0;
+    }
+    .app-cta{
+        margin-left:0;
+        margin-right:0;
+        padding-left:20px;
+        padding-right:20px;
     }
 }
