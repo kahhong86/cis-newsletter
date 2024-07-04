@@ -274,6 +274,18 @@ h2{
 .purple-container{
     @extend .yellow-container;
     background-color: $purple;
+
+    .two-column{
+        .bio{
+            color:#000;
+        }
+    }
+}
+
+.grey-container{
+    @extend .yellow-container;
+    background-color: #d1d1d1;
+    color:#000;
 }
 
 .black-container{
@@ -353,10 +365,14 @@ h2{
     display:flex;
 
     .img{
-        width:467px;
-            
+        width:50%;   
+
+        img{
+        width: 100%;
+        }
     }
     .content{
+        width:50%;
         padding:0 40px;
 
         
@@ -496,12 +512,24 @@ h2{
         width:100%;
         height: 400px;
     }
+    padding-bottom:30px;
 }
 
 .connect{
     .yellow-container{
         .two-column{
             margin:0;
+
+            .first-column{
+                width:45%;
+            }
+            .second-column{
+                width:55%;
+                padding:40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }
@@ -618,7 +646,6 @@ h2{
 
         .img{
             display:block;
-            width:300px;
             margin:0 0 20px;
         }
         .content{
@@ -886,6 +913,7 @@ h2{
         .content{
             display: block;
             padding:0;
+            width: 100%;
         }
     }
 
@@ -1035,6 +1063,12 @@ h2{
         iframe{
             width:100%;
             height: 200px;
+        }
+    }
+
+    .connect .yellow-container .two-column{
+        .first-column,.second-column{
+            width:100%;
         }
     }
 }

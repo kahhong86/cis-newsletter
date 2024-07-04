@@ -278,20 +278,28 @@ h2 {
   line-height: 28px;
 }
 
-.yellow-container, .black-container, .purple-container {
+.yellow-container, .black-container, .grey-container, .purple-container {
   padding: 65px 65px 40px;
   margin: 0 -65px 60px;
   background-color: #f3cd25;
 }
-.yellow-container .title-container .header, .black-container .title-container .header, .purple-container .title-container .header {
+.yellow-container .title-container .header, .black-container .title-container .header, .grey-container .title-container .header, .purple-container .title-container .header {
   background-image: url("../images/title-line-white.png");
 }
-.yellow-container .bio, .black-container .bio, .purple-container .bio {
+.yellow-container .bio, .black-container .bio, .grey-container .bio, .purple-container .bio {
   padding-bottom: 20px;
 }
 
 .purple-container {
   background-color: #655dc6;
+}
+.purple-container .two-column .bio {
+  color: #000;
+}
+
+.grey-container {
+  background-color: #d1d1d1;
+  color: #000;
 }
 
 .black-container {
@@ -363,9 +371,13 @@ h2 {
   display: flex;
 }
 .img-content .img {
-  width: 467px;
+  width: 50%;
+}
+.img-content .img img {
+  width: 100%;
 }
 .img-content .content {
+  width: 50%;
   padding: 0 40px;
 }
 .img-content .content .header {
@@ -485,13 +497,26 @@ h2 {
   text-align: center;
 }
 
+.iframe {
+  padding-bottom: 30px;
+}
 .iframe iframe {
   width: 100%;
   height: 400px;
 }
 
-.connect .yellow-container .two-column, .connect .purple-container .two-column, .connect .black-container .two-column {
+.connect .yellow-container .two-column, .connect .purple-container .two-column, .connect .grey-container .two-column, .connect .black-container .two-column {
   margin: 0;
+}
+.connect .yellow-container .two-column .first-column, .connect .purple-container .two-column .first-column, .connect .grey-container .two-column .first-column, .connect .black-container .two-column .first-column {
+  width: 45%;
+}
+.connect .yellow-container .two-column .second-column, .connect .purple-container .two-column .second-column, .connect .grey-container .two-column .second-column, .connect .black-container .two-column .second-column {
+  width: 55%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1068px) {
@@ -597,7 +622,6 @@ h2 {
   }
   .img-content .img {
     display: block;
-    width: 300px;
     margin: 0 0 20px;
   }
   .img-content .content {
@@ -694,13 +718,13 @@ h2 {
     display: block;
   }
 
-  .yellow-container, .purple-container, .black-container {
+  .yellow-container, .purple-container, .grey-container, .black-container {
     padding-left: 2rem;
     padding-right: 2rem;
     margin-left: -2rem;
     margin-right: -2rem;
   }
-  .yellow-container:last-child, .purple-container:last-child, .black-container:last-child {
+  .yellow-container:last-child, .purple-container:last-child, .grey-container:last-child, .black-container:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -836,6 +860,7 @@ h2 {
   .img-content .content {
     display: block;
     padding: 0;
+    width: 100%;
   }
 
   .discount {
@@ -932,7 +957,7 @@ h2 {
     margin-bottom: 40px;
   }
 
-  .yellow-container, .purple-container, .black-container {
+  .yellow-container, .purple-container, .grey-container, .black-container {
     padding-top: 40px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -940,11 +965,11 @@ h2 {
     margin-right: -2rem;
     margin-bottom: 40px;
   }
-  .yellow-container:last-child, .purple-container:last-child, .black-container:last-child {
+  .yellow-container:last-child, .purple-container:last-child, .grey-container:last-child, .black-container:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  .yellow-container .bio, .purple-container .bio, .black-container .bio {
+  .yellow-container .bio, .purple-container .bio, .grey-container .bio, .black-container .bio {
     padding-bottom: 0;
   }
 
@@ -967,6 +992,10 @@ h2 {
   .iframe iframe {
     width: 100%;
     height: 200px;
+  }
+
+  .connect .yellow-container .two-column .first-column, .connect .purple-container .two-column .first-column, .connect .grey-container .two-column .first-column, .connect .black-container .two-column .first-column, .connect .yellow-container .two-column .second-column, .connect .purple-container .two-column .second-column, .connect .grey-container .two-column .second-column, .connect .black-container .two-column .second-column {
+    width: 100%;
   }
 }
 
